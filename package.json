@@ -4,7 +4,6 @@
   "description": "Scaffold for an electron app with react, vite and typescript",
   "main": "dist/main/index.js",
   "type": "module",
-
   "author": {
     "name": "Uwe Riegel",
     "email": "uriegel@hotmail.de"
@@ -13,8 +12,8 @@
     "appId": "com.example.electronreact",
     "productName": "ElectronReact",
     "removePackageScripts": true,
-    "asar": true,            
-    "asarUnpack": [],    
+    "asar": true,
+    "asarUnpack": [],
     "files": [
       "dist/main/**/*",
       "dist/renderer/**/*",
@@ -24,15 +23,18 @@
       "buildResources": "resources"
     },
     "win": {
-      "target": "nsis"      
+      "target": "nsis"
     },
     "mac": {
       "target": "dmg"
     },
     "linux": {
-      "target": ["AppImage", "deb"]
+      "target": [
+        "AppImage",
+        "deb"
+      ]
     }
-  },  
+  },
   "scripts": {
     "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && cross-env VITE_DEV_SERVER_URL=http://localhost:5173 electron .\"",
     "build": "vite build && tsc -p tsconfig.json",
@@ -48,6 +50,7 @@
   },
   "homepage": "https://github.com/uriegel/electron-react#readme",
   "dependencies": {
+    "filesystem-utilities": "^5.0.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

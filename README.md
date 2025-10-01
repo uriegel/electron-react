@@ -156,8 +156,6 @@ export default defineConfig({
 ```
 
 TODO
-* electron builder
-* deploy package
 * Add filesystem-utilities
 * test it
 * copy file to destination
