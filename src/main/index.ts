@@ -9,19 +9,7 @@ const __dirname = dirname(__filename)
 let mainWindow: BrowserWindow | null = null
 
 const createWindow = () => {
-<<<<<<< HEAD
-=======
 
-
-	(async () => {
-		console.log("Test")
-		var drives = await getDrives()
-		console.log("Test", drives)
-	})()
-
-
-
->>>>>>> 5d0d4f1 (Debug main process)
 	mainWindow = new BrowserWindow({
 		width: 800,
 		height: 600,
