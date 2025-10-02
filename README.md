@@ -156,10 +156,9 @@ export default defineConfig({
 ```
 
 TODO
-* Add filesystem-utilities
-* test it
-* copy file to destination
-* deploy package, test it
 * build web server
 * serve icon from filesystem-utilities
 * test it in React
+* Events (sse)
+* Menu
+* React extensions

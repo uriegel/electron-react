@@ -14,8 +14,8 @@ const createWindow = () => {
 
 	(async () => {
 		console.log("Test")
-		var affen = await getDrives()
-		console.log("Test", affen)
+		var drives = await getDrives()
+		console.log("Test", drives)
 	})()
 
 
